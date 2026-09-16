@@ -11,7 +11,7 @@
 
 ## Custom Theme
 
-- [ ] TASK-007 — Create custom portfolio theme
+- [x] TASK-007 — Create custom portfolio theme
 - [ ] TASK-008 — Create theme architecture
 - [ ] TASK-009 — Configure theme setup
 - [ ] TASK-010 — Configure CSS and JavaScript
