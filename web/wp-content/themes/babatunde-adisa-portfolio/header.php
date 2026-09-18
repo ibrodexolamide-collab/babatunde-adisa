@@ -33,10 +33,35 @@
 			<?php endif; ?>
 		</div>
 
-		<?php
-		/**
-		 * The primary navigation will be added here in TASK-013.
-		 */
-		?>
+		<?php if ( has_nav_menu( 'primary' ) ) : ?>
+			<nav id="site-navigation" class="site-nav" aria-label="<?php esc_attr_e( 'Primary', 'babatunde-adisa-portfolio' ); ?>">
+				<button
+					type="button"
+					class="nav-toggle"
+					aria-controls="primary-menu"
+					aria-expanded="false"
+				>
+					<span class="screen-reader-text"><?php esc_html_e( 'Menu', 'babatunde-adisa-portfolio' ); ?></span>
+					<svg class="nav-toggle__icon nav-toggle__icon--open" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+						<path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+					<svg class="nav-toggle__icon nav-toggle__icon--close" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+						<path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'primary',
+						'menu_id'        => 'primary-menu',
+						'container'      => false,
+						'menu_class'     => 'nav-menu',
+						'fallback_cb'    => false,
+					)
+				);
+				?>
+			</nav>
+		<?php endif; ?>
 	</div>
 </header>

@@ -20,7 +20,7 @@
 ## Main Interface
 
 - [x] TASK-012 — Build header
-- [ ] TASK-013 — Build navigation
+- [x] TASK-013 — Build navigation
 - [ ] TASK-014 — Build hero section
 - [ ] TASK-015 — Build About section
 - [ ] TASK-016 — Build Skills section
